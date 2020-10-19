@@ -3,14 +3,14 @@
 const mockery = require('mockery');
 const assert = require('proclaim');
 
-describe('lib/reporter', () => {
+describe('lib/reporters/reporter', () => {
 	let kleur;
 	let reporter;
 
 	beforeEach(() => {
-		kleur = require('../mock/kleur');
+		kleur = require('../../mock/kleur');
 		mockery.registerMock('kleur', kleur);
-		reporter = require('../../../lib/reporter');
+		reporter = require('../../../../lib/reporter');
 	});
 
 	it('is an object', () => {
