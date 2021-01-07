@@ -10,7 +10,7 @@ describe('lib/reporters/reporter', () => {
 	beforeEach(() => {
 		kleur = require('../../mock/kleur');
 		mockery.registerMock('kleur', kleur);
-		reporter = require('../../../../lib/reporter');
+		reporter = require('../../../../lib/reporters/reporter-cli');
 	});
 
 	it('is an object', () => {
